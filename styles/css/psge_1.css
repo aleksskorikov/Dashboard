@@ -303,13 +303,13 @@ tr td {
 }
 
 .left {
-  background-image: url(/images/logo/left\ arrow.svg);
+  background-image: url(../../images/logo/left\ arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .rite {
-  background-image: url(/images/logo/rite\ arrow.svg);
+  background-image: url(../../images/logo/rite\ arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
