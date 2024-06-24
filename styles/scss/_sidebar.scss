@@ -1,0 +1,145 @@
+@import '_changeable.scss';
+@import '_templates.scss';
+
+
+.sidebar {
+    width: 19.13rem;
+    box-shadow: $color-sidebar-box-shadow;
+    background: $color-sidebar-bg;
+
+    // .sidebar__logo
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin: 39.1px 0 69.11px 31.45px;
+    }
+
+    // .sidebar__logo-logo
+
+    &__logo-logo {
+        width: 1.88rem;
+        height: 2.05rem;
+    }
+
+    // .sidebar__logo-img
+
+    &__logo-img {
+        width: 100%;
+    }
+
+    // .sidebar__logo-title
+
+    &__logo-title {
+        color: $color-black;
+        font-family: $fonts;
+        font-size: 1.63rem;
+        font-weight: 600;
+        line-height: 2.44rem;
+        letter-spacing: 1%;
+        margin: 0 4px 0 11.45px;
+    }
+
+    // .sidebar__logo-version
+
+    &__logo-version {
+        color: $color-logo-version;
+        font-family: $fonts;
+        font-size: 0.63rem;
+        font-weight: 500;
+        line-height: 0.94rem;
+    }
+
+    // .sidebar__nav-lists
+
+    &__nav-lists {
+        display: flex;
+        flex-direction: column;
+        gap: 19.25px;
+        margin-left: 28px;
+
+    }
+
+    // .sidebar__nav-list
+
+    &__nav-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 14.44rem;
+        padding: 11px 8px 11px 11px;
+
+        &:hover {
+            border-radius: 0.5rem;
+            background: $color-hover-bg;
+
+            #Vector {
+                stroke: $color-white;
+            }
+        }
+    }
+
+    // .sidebar__user
+
+    &__user {
+        display: flex;
+        align-items: center;
+        margin: 598px 0 76px 28px;
+    }
+
+    // .sidebar__user-foto
+
+    &__user-foto {
+        width: 2.63rem;
+        height: 2.63rem;
+        margin-right: 12px;
+    }
+
+    // .sidebar__user-img
+
+    &__user-img {
+        width: 100%;
+    }
+
+    // .sidebar__user-name
+
+    &__user-name {
+        color: $color-black;
+        @extend %text-list;
+        letter-spacing: 1%;
+    }
+
+    // .sidebar__user-job-title
+
+    &__user-job-title {
+        color: $color-user-job-title;
+        @extend %text-user-job-title;
+        letter-spacing: 1%;
+    }
+}
+
+.close-btn {
+    display: none;
+    width: 8rem;
+    height: 3rem;
+    background: $color-inactiv-border;
+    border-radius: 15px;
+    color: $color-white;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.nav {
+    // .nav__list-name
+
+    &__list-name {
+        color: $color-list-name;
+        @extend %text-list;
+        margin: 0 0 0 14px;
+    }
+}
+
+.nav__list-block {
+    display: flex;
+    align-items: center;
+}

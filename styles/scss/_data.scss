@@ -1,0 +1,249 @@
+
+
+
+
+.data {
+
+    // .data__title
+
+    &__title {
+        color: $color-black;
+        font-family: $fonts;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 2.25rem;
+        margin: 41px 0 51px 71px;
+    }
+
+
+
+    // .data__block-data
+
+    &__block-data {
+        width: 60.5rem;
+        border-radius: 1.88rem;
+        box-shadow: $color-sidebar-box-shadow;
+        background: $color-sidebar-bg;
+        margin: 0 0 258px 71px;
+    }
+
+    // .data__header-search
+
+    &__header-search {
+        display: flex;
+        align-items: center;
+        width: 13.5rem;
+        height: 2.38rem;
+        border-radius: 0.63rem;
+        background: $color-header-search-bg;
+        padding: 7px 8px;
+    }
+}
+
+.data__conteiner-menu {
+    display: none;
+}
+
+.block {
+
+    // .block__data-header
+
+    &__data-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 53px 40px 38px;
+    }
+}
+
+.header {
+
+    // .header__info-all
+
+    &__info-all {
+        color: $color-black;
+        font-family: $fonts;
+        font-size: 1.38rem;
+        font-weight: 600;
+        line-height: 2.06rem;
+    }
+
+    // .header__info-activ
+
+    &__info-activ {
+        color: $color-info-activ;
+        font-family: $fonts;
+        font-size: 0.88rem;
+        font-weight: 400;
+        line-height: 1.31rem;
+    }
+}
+
+.search-btn {
+    background: inherit;
+    margin-right: 8px;
+}
+
+.search {
+    background: $color-header-search-bg;
+    width: 100%;
+
+    &::placeholder {
+        color: $color-placeholder;
+        @extend %text-user-job-title;
+    }
+}
+
+// =================================
+
+.container {
+    margin: 0 44px 0 38px;
+}
+
+.carousel {
+    overflow: hidden;
+}
+
+.page-number {
+    width: 1.56rem;
+    height: 1.5rem;
+    border: 0.06rem solid $color-page-namber;
+    border-radius: 0.25rem;
+    background: $color-btn-bg;
+    cursor: pointer;
+}
+
+.page-number.active {
+    border: 0.06rem solid $color-hover-bg;
+    border-radius: 0.25rem;
+    background: $color-hover-bg;
+    font-weight: bold;
+    color: $color-white;
+}
+
+tr td {
+    color: rgb(41, 45, 50);
+    @extend %text-list;
+    border-bottom: 0.06rem solid $color-page-namber;
+    padding-top: 24.5px;
+    padding-bottom: 23.5px;
+}
+
+.active-status {
+    width: 5rem;
+    height: 1.81rem;
+    border: 0.06rem solid $color-activ-border;
+    border-radius: 0.25rem;
+    background: $color-activ-bg;
+    color: $color-activ-color;
+}
+
+.inactive-status {
+    width: 5rem;
+    height: 1.81rem;
+    box-sizing: border-box;
+    border: 0.06rem solid $color-inactiv-border;
+    border-radius: 0.25rem;
+    background: $color-inactiv-bg;
+    color: $color-inactiv-color;
+}
+
+.user__table-td-status {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.status {
+    text-align: center;
+    padding-left: 15px;
+}
+
+
+.user {
+
+    // .user__table
+
+    &__table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    // .user__table-th
+
+    &__table-th {
+        @extend %text-table-th;
+        padding-bottom: 13.5px;
+        border-bottom: 0.06rem solid $color-page-namber;
+        text-align: left;
+    }
+
+    // .user__table-btn
+
+    &__table-btn {
+        width: 1.63rem;
+        height: 1.5rem;
+        border: 0.06rem solid $color-page-namber;
+        border-radius: 0.25rem;
+        background: $color-btn-bg;
+        margin: 0 12px;
+    }
+
+
+
+    // .user__table-btns
+
+    &__table-btns {
+        display: flex;
+        gap: 12px;
+    }
+}
+
+.left {
+    background-image: url(/images/logo/left\ arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.rite {
+    background-image: url(/images/logo/rite\ arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.data {
+
+    // .data__block-pagination
+
+    &__block-pagination {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 40px 40px 0;
+    }
+
+}
+
+.block {
+
+    // .block__pagination-info
+
+    &__pagination-info {
+        padding: 32px 0 41px 38px;
+    }
+}
+
+.pagination {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+    // .pagination__info-text
+
+    &__info-text {
+        @extend %text-table-th;
+    }
+}
+
+.dots {
+    background: inherit;
+}
